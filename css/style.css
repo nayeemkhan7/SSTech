@@ -5,7 +5,9 @@
 body{
   font-family: 'Ubuntu', sans-serif;
 }
-
+ul li{
+  list-style: none;
+}
 
 
 /* ==================================== */
@@ -147,7 +149,7 @@ header img{
 /* ========= Projects Section ========= */
 
 .project-area{
-  background:linear-gradient(rgba(0,200,0,0.1),rgba(0,200,0,0.1)), url(../img/projects-bg.png) no-repeat;
+  background: url(../img/projects-bg.png) no-repeat;
   background-position: center;
   background-size: cover;
   padding: 80px 0 90px;
@@ -163,7 +165,7 @@ header img{
 }
 .project-area .card{
   background: transparent;
-  border: 0;
+  border-color: transparent;
 }
 .project-area .card .card-title{
   font-size: 32px;
@@ -171,6 +173,10 @@ header img{
 }
 .project-area .card p{
   font-size: 18px;
+}
+.project-area .card:hover{
+  box-shadow: 0px 0px 3px #dad7d7;
+  cursor: pointer;
 }
 
 /* ==================================== */
@@ -200,6 +206,39 @@ header img{
   color: #fff;
   background: #756aff;
 }
+
+.portfolio-area .port-menu{}
+.portfolio-area .port-click{}
+.portfolio-area .port-click ul{
+  margin: 40px 0 70px;
+  padding-left: 0;
+  padding: 0;
+  border: 2px solid #756aff;
+  border-radius: 30px;
+}
+.portfolio-area .port-click ul li{
+  display: inline-block;
+  text-align: center;
+  margin: 2px 0px;
+  padding: 8px 15px;
+  border-radius: 20px;
+}
+.portfolio-area .port-click ul li:first-child{
+  margin-left: 0;
+}
+.portfolio-area .port-click ul li a{
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #111;
+}
+.portfolio-area .port-click ul li:hover{
+  background: #756aff;
+}
+.portfolio-area .port-click ul li:hover a{
+  color: #fff;
+}
+
+
 .portfolio-area .port-item{
   position: relative;
   margin-bottom: 30px;
