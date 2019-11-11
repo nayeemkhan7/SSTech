@@ -195,23 +195,12 @@ header img{
 .portfolio-area h2 span{
   color: #756aff;
 }
-.portfolio-area .btn-port{
-  text-transform: uppercase;
-  margin: 30px 0 80px;
-  padding: 8px 20px;
-  color: #111;
-  border-color: #756aff;
-}
-.portfolio-area .btn-port:hover{
-  color: #fff;
-  background: #756aff;
-}
 
-.portfolio-area .port-menu{}
+.portfolio-area .port-menu{
+  margin: 40px 0 70px;
+}
 .portfolio-area .port-click{}
 .portfolio-area .port-click ul{
-  margin: 40px 0 70px;
-  padding-left: 0;
   padding: 0;
   border: 2px solid #756aff;
   border-radius: 30px;
@@ -219,12 +208,10 @@ header img{
 .portfolio-area .port-click ul li{
   display: inline-block;
   text-align: center;
-  margin: 2px 0px;
+  margin: 1px 0px;
   padding: 8px 15px;
   border-radius: 20px;
-}
-.portfolio-area .port-click ul li:first-child{
-  margin-left: 0;
+  cursor: pointer;
 }
 .portfolio-area .port-click ul li a{
   text-decoration: none;
@@ -238,23 +225,29 @@ header img{
   color: #fff;
 }
 
+/* =============== Gallery Option ===============*/
 
 .portfolio-area .port-item{
   position: relative;
   margin-bottom: 30px;
-  transition: all 0.4s linear ease-in;
+  transition: all 0.3s ease-in;
 }
-.portfolio-area .port-hover{
+.portfolio-area .port-item img{
+  border-radius: 3px;
+}
+.portfolio-area .port-item .port-hover{
   position: absolute;
   top: 0;
-  left: 0;
+  left: 4%;
   height: 100%;
-  width: 100%;
+  width: 92.5%;
+  background: linear-gradient(rgba(20,20,120,0.6),rgba(20,20,120,0.6));
   opacity: 0;
+  border-radius: 3px;
 }
 .portfolio-area .port-hover ul{
   position: relative;
-  top: 50%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%,-50%);
   padding-left: 1rem;
@@ -272,6 +265,15 @@ header img{
   font-size: 30px;
   text-align: center;
   line-height: 50px;
+}
+.portfolio-area .port-hover h4{
+  margin-top: 45%;
+  text-align: left;
+  margin-left: 12%;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 300;
 }
 .portfolio-area .port-hover .fa{}
 /* Hover Effect */
@@ -375,7 +377,7 @@ header img{
 /* ========= Contact Section ========== */
 
 .contact-area{
-  background:linear-gradient(rgba(0,200,0,0.1),rgba(0,200,0,0.1)) no-repeat;
+  background:linear-gradient(rgba(250,250,255,0.5),rgba(243,242,255,0.5)) no-repeat;
   padding: 80px 0;
 }
 .contact-area h2{
